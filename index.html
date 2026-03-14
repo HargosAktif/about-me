@@ -1,1 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LatenT | Hakkımda</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',system-ui,sans-serif;
+background:linear-gradient(135deg,#0f0c29 0%,#302b63 50%,#24243e 100%);
+color:#e0e0ff;
+min-height:100vh;
+padding:30px 15px;
+line-height:1.6;
+}
+
+.container{
+width:100%;
+max-width:580px;
+margin:0 auto;
+}
+
+.card{
+position:relative;
+background:rgba(20,20,45,0.75);
+backdrop-filter:blur(10px);
+border-radius:20px;
+padding:3.2rem 2.4rem 2.8rem;
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+border:1px solid rgba(100,120,255,0.18);
+overflow:hidden;
+transition:transform .3s ease, box-shadow .4s ease;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 50px rgba(0,0,0,0.6);
+}
+
+.card::before{
+content:'';
+position:absolute;
+inset:-2px;
+background:linear-gradient(45deg,#ff6ec4,#7873f5,#4ade80,#facc15,#ff6ec4);
+background-size:300% 300%;
+animation:borderFlow 10s linear infinite;
+border-radius:22px;
+z-index:-2;
+filter:blur(1px);
+opacity:.7;
+}
+
+.card::after{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(15,12,41,0.4);
+z-index:-1;
+border-radius:20px;
+}
+
+h1{
+font-size:2.1rem;
+font-weight:700;
+color:#f0f0ff;
+margin-bottom:.6rem;
+background:linear-gradient(90deg,#a78bfa,#7dd3fc);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+letter-spacing:-.5px;
+}
+
+.logo{
+width:80px;
+height:80px;
+border-radius:50%;
+margin-bottom:1.8rem;
+border:4px solid rgba(255,255,255,0.1);
+box-shadow:0 10px 30px rgba(0,0,0,0.3), inset 0 0 15px rgba(255,255,255,0.2);
+}
+
+.username{
+color:#a0a0ff;
+font-size:1rem;
+margin-bottom:1.8rem;
+font-family:'Courier New',monospace;
+}
+
+.links{
+display:flex;
+justify-content:center;
+gap:1.2rem;
+flex-wrap:wrap;
+margin:1.5rem 0 2rem;
+}
+
+.link-btn{
+display:inline-flex;
+align-items:center;
+gap:8px;
+padding:.75rem 1.6rem;
+background:linear-gradient(45deg,#6366f1,#8b5cf6);
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+font-size:.95rem;
+transition:all .3s ease;
+box-shadow:0 4px 15px rgba(99,102,241,0.3);
+}
+
+.link-btn:hover{
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 10px 25px rgba(99,102,241,0.5);
+background:linear-gradient(45deg,#8b5cf6,#6366f1);
+}
+
+.about{
+background:rgba(30,30,60,0.5);
+border-radius:16px;
+padding:2rem;
+margin-top:2.5rem;
+border:1px solid rgba(120,140,255,0.15);
+backdrop-filter:blur(8px);
+}
+
+.about h2{
+color:#c4b5fd;
+font-size:1.45rem;
+margin:0 0 1.1rem;
+position:relative;
+display:inline-block;
+}
+
+.about h2::after{
+content:'';
+position:absolute;
+bottom:-6px;
+left:0;
+width:60%;
+height:3px;
+background:linear-gradient(90deg,#c4b5fd,#a78bfa);
+border-radius:3px;
+}
+
+.about p{
+color:#d1d5ff;
+font-size:1.05rem;
+margin-bottom:1.1rem;
+}
+
+.contact-info{
+margin-top:1.5rem;
+padding-top:1.5rem;
+border-top:1px solid rgba(120,140,255,0.2);
+}
+
+.other{
+color:#a5b4fc;
+font-size:.95rem;
+margin-top:1.8rem;
+}
+
+.email{
+color:#a5b4fc;
+font-family:monospace;
+word-break:break-all;
+}
+
+@keyframes borderFlow{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+@media (max-width:500px){
+.card{padding:2.5rem 1.6rem 2rem;}
+h1{font-size:1.9rem;}
+.link-btn{padding:.7rem 1.4rem;font-size:.92rem;}
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Merhaba, ben LatenT!</h1>
+
+<img src="https://github.com/HargosAktif.png" alt="LatenT Avatar" class="logo">
+
+<p class="username">@slmmiracakkus</p>
+
+<div class="links">
+
+<a href="https://instagram.com/slmmiracakkus" target="_blank" rel="noopener noreferrer" class="link-btn">
+<i class="fab fa-instagram"></i> Instagram
+</a>
+
+<a href="https://github.com/raysrad12zirve" target="_blank" rel="noopener noreferrer" class="link-btn">
+<i class="fab fa-github"></i> GitHub
+</a>
+
+</div>
+</div>
+
+<div class="about">
+
+<h2>Hakkımda</h2>
+
+<p>Merhaba! Ben LatenT. Yazılım dilleri, teknolojiler ve yeni projeler üretmek en büyük tutkum.</p>
+
+<p>Siber güvenlik alanında da kendimi geliştiriyorum. Her gün biraz daha ileriye gitmeye çalışıyorum.</p>
+
+<div class="contact-info">
+
+<h2>İletişim</h2>
+
+<p>E-posta: <span class="email">miracakkus836@gmail.com</span></p>
+
+<p>Yukarıdaki sosyal medya hesaplarımdan da bana ulaşabilirsin.</p>
+
+</div>
+
+<div class="other">
+
+<h2>Diğer Bilgiler</h2>
+
+<p>Yaşım 12 ve yeni yeni yazılım dillerini öğreniyorum. Bu sayfanın amacı kendimi tanıtmak ve yazılım alanında ilerlemek isteyen insanlara ilham vermek. Bu proje benim için bir deneyim oldu ve ileride daha güzel projeler yapmayı planlıyorum.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

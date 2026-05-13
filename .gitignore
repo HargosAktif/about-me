@@ -1,0 +1,17 @@
+# Local dev files
+*.log
+.DS_Store
+Thumbs.db
+
+# Original un-stego'd image (don't expose the clean version)
+bg_original.png
+original_*.png
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+desktop.ini
